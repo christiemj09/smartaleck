@@ -1,8 +1,9 @@
 *~
-packages
 .creds
 creds
 decs
 input
 output
 tests/test.out
+__pycache__
+*.egg-info
