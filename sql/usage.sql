@@ -47,3 +47,10 @@ FROM
     python
 WHERE
     name = 'THREE';
+
+SELECT
+    @(obj -> 'py_add' ** '{"a": 2, "b": 3}') AS res
+FROM
+    python
+WHERE
+    name = 'attributes';
