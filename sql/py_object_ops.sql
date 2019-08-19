@@ -20,3 +20,9 @@ CREATE OPERATOR ** (
     rightarg = json,
     function = py_object_call_kwargs
 );
+
+CREATE OPERATOR ** (
+    leftarg = py_object,
+    rightarg = py_arg[],
+    function = py_object_call
+);
